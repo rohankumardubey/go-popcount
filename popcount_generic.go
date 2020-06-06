@@ -3,7 +3,7 @@
 // Modified BSD License license that can be found in
 // the LICENSE file.
 
-// +build !amd64 gccgo appengine
+// +build !arm64,!amd64 gccgo appengine
 
 package popcount
 
