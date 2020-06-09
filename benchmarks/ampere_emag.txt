@@ -1,0 +1,43 @@
+goos: linux
+goarch: arm64
+pkg: github.com/barakmich/go-popcount
+BenchmarkCountBytes
+BenchmarkCountBytes/32
+BenchmarkCountBytes/32         	30303896	        39.2 ns/op	 816.32 MB/s
+BenchmarkCountBytes/128
+BenchmarkCountBytes/128        	40534400	        29.6 ns/op	4324.69 MB/s
+BenchmarkCountBytes/1K
+BenchmarkCountBytes/1K         	 6974053	       172 ns/op	5952.73 MB/s
+BenchmarkCountBytes/16K
+BenchmarkCountBytes/16K        	  458394	      2614 ns/op	6267.80 MB/s
+BenchmarkCountBytes/128K
+BenchmarkCountBytes/128K       	   53374	     22470 ns/op	5833.19 MB/s
+BenchmarkCountBytes/1M
+BenchmarkCountBytes/1M         	    6330	    189491 ns/op	5533.63 MB/s
+BenchmarkCountBytes/16M
+BenchmarkCountBytes/16M        	     409	   2930601 ns/op	5724.84 MB/s
+BenchmarkCountBytes/128M
+BenchmarkCountBytes/128M       	      50	  23379661 ns/op	5740.79 MB/s
+BenchmarkCountBytes/512M
+BenchmarkCountBytes/512M       	      12	  93371433 ns/op	5749.84 MB/s
+BenchmarkCountBytesGo
+BenchmarkCountBytesGo/32
+BenchmarkCountBytesGo/32       	27452414	        43.5 ns/op	 735.98 MB/s
+BenchmarkCountBytesGo/128
+BenchmarkCountBytesGo/128      	 8352842	       144 ns/op	 891.08 MB/s
+BenchmarkCountBytesGo/1K
+BenchmarkCountBytesGo/1K       	 1000000	      1076 ns/op	 951.73 MB/s
+BenchmarkCountBytesGo/16K
+BenchmarkCountBytesGo/16K      	   69939	     17208 ns/op	 952.09 MB/s
+BenchmarkCountBytesGo/128K
+BenchmarkCountBytesGo/128K     	    8436	    142181 ns/op	 921.87 MB/s
+BenchmarkCountBytesGo/1M
+BenchmarkCountBytesGo/1M       	    1051	   1150324 ns/op	 911.55 MB/s
+BenchmarkCountBytesGo/16M
+BenchmarkCountBytesGo/16M      	      66	  18326145 ns/op	 915.48 MB/s
+BenchmarkCountBytesGo/128M
+BenchmarkCountBytesGo/128M     	       7	 146660409 ns/op	 915.16 MB/s
+BenchmarkCountBytesGo/512M
+BenchmarkCountBytesGo/512M     	       2	 582293709 ns/op	 921.99 MB/s
+PASS
+ok  	github.com/barakmich/go-popcount	29.454s
