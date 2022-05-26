@@ -1,14 +1,10 @@
-//go:build arm64 && !gccgo && !appengine && !darwin
+//go:build darwin && arm64 && !gccgo && !appengine
 
 package popcount
 
 import "unsafe"
 
-var usePOPCNT = hasPOPCNT()
-
-func hasPOPCNT() bool {
-	return getProcFeatures()&(0xF<<20) != 15<<20
-}
+var usePOPCNT = true
 
 // CountBytes function counts number of non-zero bits in slice of 8bit unsigned integers.
 func CountBytes(s []byte) uint64 {
